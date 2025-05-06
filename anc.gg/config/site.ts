@@ -1,8 +1,8 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + HeroUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "anc.gg",
+  description: "Search and View Your LoL Stats!",
   navItems: [
     {
       label: "Home",
@@ -13,16 +13,8 @@ export const siteConfig = {
       href: "/docs",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
+      label: "Summoner Search",
+      href: "/summonerSearch",
     },
   ],
   navMenuItems: [
@@ -60,10 +52,8 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    twitter: "https://twitter.com/hero_ui",
-    docs: "https://heroui.com",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    github: "https://github.com/acatapano/ANC.GG",
+    linkedin: "https://www.linkedin.com/in/andrew-catapano/",
+    summonerSearch: "/summonerSearch",
   },
 };
