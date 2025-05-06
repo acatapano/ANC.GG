@@ -28,7 +28,7 @@ export default function SearchComponent() {
     setLoading(true);
   
     try {
-        const region = Array.from(selectedKeys)[0]; // Convert Set to string
+        const region = "americas"; // Array.from(selectedKeys)[0]; // Convert Set to string
         
         // Master API Call:
         const response = await callPostAPIGateway('anc.gg', { region, name_tag: query });
@@ -77,7 +77,7 @@ export default function SearchComponent() {
     <div className="flex flex-col items-center space-y-4 p-4">
       <div className="flex space-x-2">
         {/* NEED FULL DROPDOWN FOR ALL REGIONS LIKE OP.GG FOR SUMMONER-V4 & LEAGUE-V4 API REGION TAGS --> Explanation found in Math-V5*/}
-        <Dropdown>
+        {/*<Dropdown>
           <DropdownTrigger>
             <Button className="capitalize" variant="bordered">
               {selectedValue}
@@ -95,7 +95,7 @@ export default function SearchComponent() {
             <DropdownItem key="asia">Asia</DropdownItem>
             <DropdownItem key="europe">Europe</DropdownItem>
           </DropdownMenu>
-        </Dropdown>
+        </Dropdown>*/}
         <Input 
           type="text"
           label="Search"
