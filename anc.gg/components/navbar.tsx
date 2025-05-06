@@ -14,24 +14,15 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  LinkedInIcon,
-  GithubIcon,
-  Logo,
-} from "@/components/icons";
+import { LinkedInIcon, GithubIcon, Logo } from "@/components/icons";
 
 export const Navbar = () => {
-
   return (
     <HeroUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-          <img
-            src="/favicon.ico"
-            alt="anc.gg logo"
-            className="h-6 w-6"
-          />
+            <img src="/favicon.ico" alt="anc.gg logo" className="h-6 w-6" />
             <p className="font-bold text-inherit">anc.gg</p>
           </NextLink>
         </NavbarBrand>
@@ -58,7 +49,11 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal aria-label="Twitter" href={siteConfig.links.linkedin}>
+          <Link
+            isExternal
+            aria-label="Twitter"
+            href={siteConfig.links.linkedin}
+          >
             <LinkedInIcon className="text-default-500" />
           </Link>
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
